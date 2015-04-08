@@ -1,51 +1,94 @@
-!URxvt*transparent: true
-!URxvt*tintColor: #221f1f
-!URxvt*shading: 60
-URxvt*saveLines: 12000
-URxvt*foreground: #964848
-URxvt*background: #221f1f
-!#URxvt*font: xft:Bitstream Vera Sans Mono:pixelsize=12:antialias=true:hinting=true
-!#URxvt*boldFont: xft:Bitstream Vera Sans Mono:bold:pixelsize=12:antialias=true:hinting=true
-!#URxvt*font: xft:DejaVu Sans Mono:pixelsize=12:antialias=true:hinting=true
-!#URxvt*boldFont: xft:DejaVu Sans Mono:bold:pixelsize=12:antialias=true:hinting=true
-!#URxvt*font: xft:Liberation Mono:pixelsize=13:antialias=true:hinting=true
-!#URxvt*boldFont: xft:Liberation Mono:bold:pixelsize=13:antialias=true:hinting=true
-URxvt*font: xft:termsyn:size=10
-URxvt*boldFont: xft:termsyn:bold:size=10
-!#URxvt*font:-*-courier-medium-r-normal-*-14-*-*-*-*-*-iso8859-1
-!#URxvt*boldFont:-*-courier-bold-r-normal-*-14-*-*-*-*-*-iso8859-1
-! black
-URxvt*color0:  #221f1f 
-! red
-URxvt*color1:  #790808
-! green grey
-URxvt*color2:  #383838
-! yellow white  
-URxvt*color3:  #919191
-! blue black
-URxvt*color4:  #141414
-! magenta red
-URxvt*color5:  #930404 
-! cyan grey 
-URxvt*color6:  #464343 
-! white
-URxvt*color7:  #f8f8f8
-! black bold
-URxvt*color8:  #4d4a4a
-! red bold
-URxvt*color9:  #820d0d
-! green bold grey
-URxvt*color10: #1e1717
-! yellow bold white
-URxvt*color11: #c4bebe
-! blue bold black
-URxvt*color12: #383232
-! magenta bold red
-URxvt*color13: #bf0707
-! cyan bold grey
-URxvt*color14: #776767
-! white bold
-URxvt*color15: #ffffff
-URxvt*scrollBar: false
-URxvt*scrollBar_right: false
-URxvt*scrollstyle: rxvt
+
+! URXVT FONTS
+!------------------------------------------------
+ 
+URxvt*font: xft:Droid\ Sans\ Mono\ for\ Powerline:size=8
+URxvt*boldFont: xft:Droid\ Sans\ Mono\ for\ Powerline:bold:size=8
+URxvt*letterSpace: 0
+URxvt*allow_bold: true
+ 
+ 
+! URXVT ENABLE LINK SUPPORT
+!------------------------------------------------
+ 
+!URxvt.perl-ext-common: default,matcher,tabbedex,vtwheel,clipboard
+!tabbed
+!URxvt.matcher.button:   1
+!URxvt.perl-ext:      default,url-select
+!URxvt.keysym.M-u: perl:url-select:select_next
+!URxvt.url-select.launcher:   /usr/bin/xdg-open
+!URxvt.url-select.underline: true
+ 
+!URxvt.perl-ext-common: default,matcher
+!URxvt.url-launcher: /usr/bin/xdg-open
+!URxvt.matcher.button: 1
+ 
+!disable the fucking bell
+URxvt.insecure:                         false
+ 
+! URXVT COPY PASTE SHORTCUTS
+!------------------------------------------------
+ 
+URxvt.keysym.M-c:                       perl:clipboard:copy
+URxvt.keysym.M-v:                       perl:clipboard:pasteq
+ 
+! URXVT SCROLLBAR AND CURSOR STYLE
+!------------------------------------------------
+ 
+URxvt*saveLines:                        300000
+URxvt.scrollBar:                        false
+!URxvt*scrollstyle:                     plain
+URxvt*cursorBlink:                      true
+URxvt*cursorUnderline:          true
+URxvt*cursorColor:                      #4e9a06
+ 
+! URXVT TABS
+!------------------------------------------------
+ 
+URxvt.tabbedex.autohide:        yes
+URxvt.tabbedex.tabbar-fg:       2
+URxvt.tabbedex.tabbar-bg:       0
+URxvt.tabbedex.tab-fg:          10
+URxvt.tabbedex.tab-bg:          0
+URxvt.tabbedex.title:           yes
+URxvt.tabbedex.new-button:  no
+ 
+! URXVT FULLSCREEN TOGGLE
+!------------------------------------------------
+ 
+URxvt.keysym.F11:                       perl:fullscreen:switch
+URxvt.perl-ext-common: default,matcher,vtwheel
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.matcher.button: 1
+ 
+! URXVT COLORS
+!------------------------------------------------
+ 
+
+
+*background:                            #111111
+*foreground:                            #F5F5F5
+!black
+*color0:                                        #000000
+*color8:                                        #444444
+!red
+*color1:                                        #168eb1
+*color9:                                        #0d5a70
+!green
+*color2:                                        #6e858c
+*color10:                                       #364144
+!yellow
+*color3:                                        #deecf1
+*color11:                                       #a4b1b5
+!blue
+*color4:                                        #407ebd
+*color12:                                       #264a6f
+!magenta
+*color5:                                        #55aec8
+*color13:                                       #2e6474
+!cyan
+*color6:                                        #7f8e9a
+*color14:                                       #475058
+!white
+*color7:                                        #F5F5F5
+*color15:                                       #CCCCCC
