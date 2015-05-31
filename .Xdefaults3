@@ -1,0 +1,93 @@
+! URXVT FONTS
+!------------------------------------------------
+ 
+URxvt*font: xft:Droid\ Sans\ Mono\ for\ Powerline:size=8
+URxvt*boldFont: xft:Droid\ Sans\ Mono\ for\ Powerline:bold:size=8
+URxvt*letterSpace: 0
+URxvt*allow_bold: true
+ 
+ 
+! URXVT ENABLE LINK SUPPORT
+!------------------------------------------------
+ 
+!URxvt.perl-ext-common: default,matcher,tabbedex,vtwheel,clipboard
+!tabbed
+!URxvt.matcher.button:   1
+!URxvt.perl-ext:      default,url-select
+!URxvt.keysym.M-u: perl:url-select:select_next
+!URxvt.url-select.launcher:   /usr/bin/xdg-open
+!URxvt.url-select.underline: true
+ 
+!URxvt.perl-ext-common: default,matcher
+!URxvt.url-launcher: /usr/bin/xdg-open
+!URxvt.matcher.button: 1
+ 
+!disable the fucking bell
+URxvt.insecure:                         false
+ 
+! URXVT COPY PASTE SHORTCUTS
+!------------------------------------------------
+ 
+URxvt.keysym.M-c:                       perl:clipboard:copy
+URxvt.keysym.M-v:                       perl:clipboard:pasteq
+ 
+! URXVT SCROLLBAR AND CURSOR STYLE
+!------------------------------------------------
+ 
+URxvt*saveLines:                        300000
+URxvt.scrollBar:                        false
+!URxvt*scrollstyle:                     plain
+URxvt*cursorBlink:                      true
+URxvt*cursorUnderline:          true
+URxvt*cursorColor:                      #4e9a06
+ 
+! URXVT TABS
+!------------------------------------------------
+ 
+URxvt.tabbedex.autohide:        yes
+URxvt.tabbedex.tabbar-fg:       2
+URxvt.tabbedex.tabbar-bg:       0
+URxvt.tabbedex.tab-fg:          10
+URxvt.tabbedex.tab-bg:          0
+URxvt.tabbedex.title:           yes
+URxvt.tabbedex.new-button:  no
+ 
+! URXVT FULLSCREEN TOGGLE
+!------------------------------------------------
+ 
+URxvt.keysym.F11:                       perl:fullscreen:switch
+URxvt.perl-ext-common: default,matcher,vtwheel
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.matcher.button: 1
+ 
+! URXVT COLORS
+!------------------------------------------------
+ 
+
+
+*background:                            #111111
+*foreground:                            #584e47
+!black
+*color0:                                        #000000
+*color8:                                        #444444
+!red 
+*color1:                                        #b16316
+*color9:                                        #70390d
+!green 
+*color2:                                        #8c7f6e
+*color10:                                       #443d36
+!yellow 
+*color3:                                        #f1e7de
+*color11:                                       #b5aca4
+!blue  
+*color4:                                        #bd7240
+*color12:                                       #6f4d26
+!magenta 
+*color5:                                        #c88055
+*color13:                                       #744f2e
+!cyan 
+*color6:                                        #9a8a7f
+*color14:                                       #584e47
+!white
+*color7:                                        #F5F5F5
+*color15:                                       #CCCCCC
